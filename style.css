@@ -1,0 +1,390 @@
+@import url('https://fonts.googleapis.com/css2?family=Macondo&family=Merienda&family=Montserrat:ital,wght@1,100&family=Nunito:wght@200&family=Pixelify+Sans:wght@600&family=Playfair+Display:ital,wght@1,500&family=Roboto+Condensed:wght@300&family=Sofia+Sans+Condensed:ital,wght@1,100&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    scroll-behavior: smooth;
+    font-family:"Nunito" ;
+
+}
+/* Navbar */
+#navbar{
+    background: #f9f9f9;
+
+}
+#logo{
+    font-size: 40px;
+    font-weight: 600;
+    color:black ;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 5px;
+
+}
+#logo span{
+    color: rgb(107, 151, 86);
+}
+.navbar-roggler span{
+    color: rgb(161, 103, 103);
+}
+.navbar-nav{
+    margin-left: 100px;
+    
+}
+.nav-item .nav-link{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+    letter-spacing: 2px;
+    border: 20px;
+    transition: .4s ease-in;
+   
+
+}
+.nav-item .nav-link:hover{
+    background:rgb(107, 151, 86) ;
+    color: white;
+}
+#navbar form button{
+    background: rgb(107, 151, 86);
+    color: white;
+    border: none;
+}
+/* Nav Bar End */
+
+/* Home Section Start */
+.home{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,.3),rgba(0,0,0,.2)),url(images/travel\ image.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-top: 50px;
+}
+.home .content{
+    text-align: center;
+    padding-top: 200px;
+}
+.home .content h5{
+    color: black;
+    font-size: 38px;
+    font-weight: 500;
+    text-shadow: 0px 1px 1px black;
+}
+.home .content h1{
+    color: white;
+    font-size: 40px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    margin-bottom: 20px;
+}
+.changeContent::after{
+    content: '';
+    color:rgb(107, 151, 86) ;
+    text-shadow: 0px 1px 1px black;
+    animation: changetext 10s infinite linear;
+}
+@keyframes changetext{
+    0%{content: " France";}
+    10%{content: " Germany";}
+    20%{content: " China";}
+    30%{content: " India";}
+    40%{content: " Italy";}
+    50%{content: " Australia";}
+    60%{content: " Morocco";}
+    70%{content: " Turkey";}
+    80%{content: " Madagascar";}
+    90%{content: " Mexico";}
+    100%{content: " Thailand";}
+
+}
+
+
+.home .content p{
+    color: #f9f9f9;
+    font-size: 20px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1 px black;
+    margin-bottom: 40px;
+
+
+
+}
+.home .content a{
+      padding: 10px;
+      background: white;
+      color: black;
+      font-weight: 500;
+      border-radius: 5px;
+      letter-spacing: 3px;
+      transition: .5s;
+      text-decoration: none;
+
+}
+.home .content a:hover{
+    background:rgb(107, 151, 86) ;
+    color: white;
+}
+
+@media (max-width:850){
+    .home{
+        background-position: 50%;
+    }
+}
+@media(max-width:450){
+    .home .content h5{
+        font-size: 20px;
+    }
+    .home .content h1{
+        font-size: 35px;
+    }
+    .home .content p{
+        font-size: 10px;
+
+    }
+}
+
+/* Home section End */
+
+/* Section Book Start */
+.book{
+    background: #f9f9f9;
+    padding:50px ;
+}
+.main-text h1{
+    text-align: center;
+    text-shadow: 0px 1px 1px black;
+    font-weight: 600;
+}
+.main-text h1 span{
+    color: rgb(107, 151, 86);
+}
+.bbok .card{
+    border-radius: 10px;
+    box-shadow: 0px 5px 5px -6px black;
+}
+.book .row{
+margin-top: 50px;
+}
+.book form input{
+    padding: 10px;
+    color: black;
+    border: none;
+    outline: none;
+    border-radius: 10px;
+    box-shadow: 05px 5px -6px black;
+}
+.book form textarea{
+    border: none;
+    border-radius: 10px;
+    resize: none;
+    height: 200px;
+    box-shadow: 0px 5px 5px -6px black;
+
+
+}
+.book .submit{
+    width:160px ;
+    background:rgb(107, 151, 86) ;
+    color: white;
+    transition: .5s;
+    margin-top: 15px;
+    font-size: 20x;
+    font-weight: 600;
+}
+.book .submit:hover{
+    width: 190px;
+    
+}
+@media(max-width:765px){
+    .book{
+        padding: 0;
+    }
+    .main-text h1{
+        padding: 20px;
+    }
+}
+
+
+
+/* Section Book End */
+
+/* Section Packages Start */
+.main-txt h1{
+    text-align: center;
+    margin-top: 30px;
+    font-weight: 600;
+    text-shadow: 0px 1px 1px black;
+    
+}
+.main-txt h1 span{
+    color:rgb(107, 151, 86) ;
+}
+.packages .card{
+    border-radius: 5px;
+    border: none;
+    box-shadow: rgba(0,0,0,.2) 0px 4px 12px;
+}
+.packages .card img{
+    border-radius: 5px;
+}
+.packages .card .card-body{
+    background: transparent;
+}
+.packages .card .card-body h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+.packages .card .card-body p{
+    font-size: 15px;
+
+}
+.checked{
+    color:rgb(107, 151, 86)
+}
+.star i{
+    font-size: 15px;
+    
+
+}
+.packages .card .card-body h6{
+    font-size: 20px;
+    margin-top: 5px;
+}
+.packages .card .card-body a{
+    padding: 10px;
+    text-decoration: none;
+    background: rgb(107, 151, 86);
+    color: white;
+    border-radius: 5px;
+    margin-top: 5px;
+}
+
+
+/* Setion Packages End */
+
+
+/* Section Services Start */
+.services{
+    background: #f9f9f9;
+    margin-top: 50px;
+
+}
+.services .card{
+    box-shadow: rgba(0,0,0,.2) 0px 4px 12px;
+    border: none;
+    cursor: pointer;
+}
+.services .card i{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(107, 151, 86);
+    margin-top: 20px;
+}
+.services .card .card-body h3{
+    font-weight: 600;
+}
+.services .card .card-body{
+    text-align: center;
+}
+
+
+
+
+/* Section Services End */
+
+/* Section Gallary Start */
+.gallary{
+    margin-top: 50px;
+}
+.gallary .card{
+    border-radius: 10px;
+    box-shadow:rgba(0,0,0,.2) 0px 4px 12px ;
+    cursor: pointer;
+}
+.gallary .card img{
+    border-radius: 10px;
+    transition: .5s;
+}
+.gallary .card img:hover{
+    transform: scale(1.1);
+}
+
+/* Section Gallary Start */
+
+/* About Start */
+.about{
+    margin-top: 50px;
+    background: #f9f9f9;
+    padding: 50px;
+
+}
+.about .card{
+    border-radius: 10px;
+}
+.about .card img{
+    border-radius: 10px;
+}
+.about h2{
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+.about p{
+    font-size: 500;
+}
+#about-btn{
+    width: 150px;
+    height: 30px;
+    border: none;
+    border-radius: 5px;
+    background:rgb(107, 151, 86);
+    color: white;
+    letter-spacing: 2px;
+    font-weight: 500;
+    transition: .5s ease-in;
+    cursor: pointer;
+}
+#about-btn:hover{
+    width: 170px;
+
+
+}
+
+/* About End */
+
+/* Footer Start */
+#footer{
+    width: 100%;
+    margin-top: 150px;
+    text-align: center;
+    background: #f9f9f9;
+
+}
+#footer h1{
+    font-weight: 600;
+    padding-top: 30px;
+    text-shadow: rgba(0,0,0,.2) 0px 4px 12px;
+
+}
+#footer h1 span{
+    color: rgb(107, 151, 86);
+}
+.social-links i{
+padding: 10px;
+border-radius: 5px;
+font-size: 30px;
+cursor: pointer;
+transition: .5s ease-in-out;
+margin-left: 10px;
+
+
+}
+.social-links i:hover{
+    background:rgb(107, 151, 86);
+}
+
+
+
+/* Footer End */
